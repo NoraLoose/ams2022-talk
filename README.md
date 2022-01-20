@@ -16,6 +16,8 @@ Applying a spatial filter to gridded data from models or observations is a commo
 
 Here we introduce a new python package, GCM-Filters, which is specifically designed to filter GCM data. The GCM-Filters algorithm applies a discrete Laplacian to smooth a field through an iterative process that resembles diffusion. The discrete Laplacian takes into account the varying grid-cell geometry of the complex GCM grids and uses a no-flux boundary condition, mimicking how diffusion is internally implemented in GCMs and ensuring conservation of the integral. Conservation of the integral is a desirable filter property for many physical quantities, for example energy or ocean salinity. The user can employ GCM-Filters on either CPUs or GPUs, with NumPy or CuPy input data. Moreover, GCM-Filters leverages Dask and Xarray to support filtering of larger-than-memory datasets and computational flexibility.
 
+In this talk, we will present examples of how to use GCM-Filters in a range of oceanographic applications. Ongoing development of the GCM-Filters package is hosted on GitHub at https://github.com/ocean-eddy-cpt/gcm-filters, with community contributions welcome.
+
 ### Access the presentation slides
 
 We used [`reveal.js`](https://github.com/hakimel/reveal.js) to create this presentation.
