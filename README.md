@@ -24,7 +24,7 @@ We used [`reveal.js`](https://github.com/hakimel/reveal.js) to create this prese
 
 To build the html file, run these lines at the terminal within the repository:
 ```bash
-jupyter nbconvert index.ipynb --to slides --reveal-prefix reveal.js --SlidesExporter.reveal_transition=none --SlidesExporter.reveal_scroll=True 
+jupyter nbconvert index.ipynb --to slides 
 
 mv index.slides.html index.html # renames the html file
 ```
