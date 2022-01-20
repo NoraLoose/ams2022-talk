@@ -14410,7 +14410,7 @@ div.jp-OutputPrompt {
     <img src="./images/funding.png" width=40%/>
 </div>
 </div>
-</div>
+</div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><!-- background: #fff4e3-->
@@ -14418,9 +14418,17 @@ div.jp-OutputPrompt {
 <div align="center">
     <h2><span style="font:futura; color:black">Abstract</span></h2>
      <hr>
-</div><p>Applying a spatial filter to gridded data from models or observations is a common analysis method in the Earth Sciences, for example to study oceanic and atmospheric motions at different spatial scales or to develop subgrid-scale parameterizations for ocean models. The spatial filters that are included in existing python packages, such as SciPy's multidimensional Gaussian filter, are typically specialized for image processing. For data from General Circulation Models (GCMs), image processing tools are however of limited use because these tools assume a regular and rectangular Cartesian grid and employ simple boundary conditions. In contrast, GCMs come on irregular curvilinear grids, and continental boundaries in GCMs need more careful treatment than currently supported. </p>
-<p>Here we introduce a new python package, GCM-Filters, which is specifically designed to filter GCM data. The GCM-Filters algorithm applies a discrete Laplacian to smooth a field through an iterative process that resembles diffusion. The discrete Laplacian takes into account the varying grid-cell geometry of the complex GCM grids and uses a no-flux boundary condition, mimicking how diffusion is internally implemented in GCMs and ensuring conservation of the integral. Conservation of the integral is a desirable filter property for many physical quantities, for example energy or ocean salinity. The user can employ GCM-Filters on either CPUs or GPUs, with NumPy or CuPy input data. Moreover, GCM-Filters leverages Dask and Xarray to support filtering of larger-than-memory datasets and computational flexibility.</p>
-<p>In this talk, we will present examples of how to use GCM-Filters in a range of oceanographic applications. Ongoing development of the GCM-Filters package is hosted on GitHub at <a href="https://github.com/ocean-eddy-cpt/gcm-filters">https://github.com/ocean-eddy-cpt/gcm-filters</a>, with community contributions welcome.</p>
+</div><p><div align="left" style="line-height:80%" >
+<span style="font-size:14px">
+Applying a spatial filter to gridded data from models or observations is a common analysis method in the Earth Sciences, for example to study oceanic and atmospheric motions at different spatial scales or to develop subgrid-scale parameterizations for ocean models. The spatial filters that are included in existing python packages, such as SciPy's multidimensional Gaussian filter, are typically specialized for image processing. For data from General Circulation Models (GCMs), image processing tools are however of limited use because these tools assume a regular and rectangular Cartesian grid and employ simple boundary conditions. In contrast, GCMs come on irregular curvilinear grids, and continental boundaries in GCMs need more careful treatment than currently supported. 
+<br>
+<br> 
+Here we introduce a new python package, GCM-Filters, which is specifically designed to filter GCM data. The GCM-Filters algorithm applies a discrete Laplacian to smooth a field through an iterative process that resembles diffusion. The discrete Laplacian takes into account the varying grid-cell geometry of the complex GCM grids and uses a no-flux boundary condition, mimicking how diffusion is internally implemented in GCMs and ensuring conservation of the integral. Conservation of the integral is a desirable filter property for many physical quantities, for example energy or ocean salinity. The user can employ GCM-Filters on either CPUs or GPUs, with NumPy or CuPy input data. Moreover, GCM-Filters leverages Dask and Xarray to support filtering of larger-than-memory datasets and computational flexibility.
+<br> 
+<br>
+In this talk, we will present examples of how to use GCM-Filters in a range of oceanographic applications. Ongoing development of the GCM-Filters package is hosted on GitHub at <a href="https://github.com/ocean-eddy-cpt/gcm-filters">https://github.com/ocean-eddy-cpt/gcm-filters</a>, with community contributions welcome.
+</span>    
+</div></p>
 <p><a href="https://annual.ametsoc.org/index.cfm/2022/program-events/conferences-and-symposia/12th-symposium-on-advances-in-modeling-and-analysis-using-python/">12th Symposium on Advances in Modeling and Analysis Using Python</a>
 <br>
 <b>Session:</b> Python Tools in the Atmospheric and Oceanic Sciences. Part I
@@ -15734,12 +15742,12 @@ Define mean kinetic energy (MKE) and eddy kinetic energy (EKE):
 <li>Documentation: <a href="https://gcm-filters.readthedocs.io/en/latest/">gcm-filters.readthedocs.io/</a></li>
 <li>File issues and make pull requests on GitHub: <a href="https://github.com/ocean-eddy-cpt/gcm-filters">https://github.com/ocean-eddy-cpt/gcm-filters</a></li>
 </ul>
-<p><a href="https://codecov.io/gh/ocean-eddy-cpt/gcm-filters"><img src="https://codecov.io/gh/ocean-eddy-cpt/gcm-filters/branch/master/graph/badge.svg?token=ZKRiulYe68" alt="codecov"></a>
-<a href="https://github.com/ocean-eddy-cpt/gcm-filters/actions?query=workflow%3Apre-commit"><img src="https://github.com/ocean-eddy-cpt/gcm-filters/workflows/pre-commit/badge.svg" alt="pre-commit"></a>
-<a href="https://github.com/ocean-eddy-cpt/gcm-filters/actions?query=workflow%3ATests"><img src="https://github.com/ocean-eddy-cpt/gcm-filters/workflows/Tests/badge.svg" alt="Tests"></a>
+<p><a href="https://github.com/ocean-eddy-cpt/gcm-filters/actions?query=workflow%3ATests"><img src="https://github.com/ocean-eddy-cpt/gcm-filters/workflows/Tests/badge.svg" alt="Tests"></a>
+<a href="https://codecov.io/gh/ocean-eddy-cpt/gcm-filters"><img src="https://codecov.io/gh/ocean-eddy-cpt/gcm-filters/branch/master/graph/badge.svg?token=ZKRiulYe68" alt="codecov"></a>
 <a href="https://gcm-filters.readthedocs.io/en/latest/?badge=latest"><img src="https://readthedocs.org/projects/gcm-filters/badge/?version=latest" alt="Documentation Status"></a>
 <a href="https://anaconda.org/conda-forge/gcm_filters"><img src="https://img.shields.io/conda/vn/conda-forge/gcm_filters.svg" alt="Conda Version"></a>
 <a href="https://badge.fury.io/py/gcm-filters"><img src="https://badge.fury.io/py/gcm-filters.svg" alt="PyPI version"></a>
+<a href="https://pepy.tech/project/gcm-filters"><img src="https://pepy.tech/badge/gcm-filters" alt="Downloads"></a>
 <a href="https://joss.theoj.org/papers/bc8ad806627f0d754347686e21f00d40"><img src="https://joss.theoj.org/papers/bc8ad806627f0d754347686e21f00d40/status.svg" alt="status"></a></p>
 
 </div>
