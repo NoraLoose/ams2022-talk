@@ -1,6 +1,6 @@
 # GCM-Filters: A Python Package for Spatial Filtering of Gridded Data from Ocean and Climate Models
 
-### 12th Symposium on Advances in Modeling and Analysis Using Python
+### 12th Symposium on Advances in Modeling and Analysis Using Python, AMS Meeting 2022
 
 #### January 25, 2022
 
@@ -20,7 +20,7 @@ In this talk, we will present examples of how to use GCM-Filters in a range of o
 
 ### Access the presentation slides
 
-We used [`reveal.js`](https://github.com/hakimel/reveal.js) to create this presentation.
+I used [`reveal.js`](https://github.com/hakimel/reveal.js) to create this presentation.
 
 To build the html file, run these lines at the terminal within the repository:
 ```bash
@@ -28,3 +28,7 @@ jupyter nbconvert index.ipynb --to slides
 
 mv index.slides.html index.html # renames the html file
 ```
+
+The slides can be accessed here https://noraloose.github.io/ams2022-talk/.
+
+
