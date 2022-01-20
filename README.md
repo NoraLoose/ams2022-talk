@@ -1,12 +1,14 @@
 # GCM-Filters: A Python Package for Spatial Filtering of Gridded Data from Ocean and Climate Models
 
-### 12th Symposium on Advances in Modeling and Analysis Using Python, AMS Meeting 2022
+### 12th Symposium on Advances in Modeling and Analysis Using Python
+
+#### January 25, 2022
 
 #### Contributors: 
 
-[Nora Loose](https://noraloose.github.io/)(*presenter)
+[Nora Loose](https://noraloose.github.io/)
 
-[Ryan Abernathey](https://github.com/rabernat), [Ian Grooms](https://github.com/iangrooms), [Julius Busecke](http://jbusecke.github.io/), [Arthur Barthe](https://github.com/arthurBarthe), [Elizabeth Yankovsky](https://github.com/ElizabethYankovsky), [Gustavo Marques](https://github.com/gustavo-marques), [Jacob Steinberg](https://github.com/jakesteinberg), [Andrew Slavin Ross](https://github.com/asross), [Hemant Khatri](https://github.com/hmkhatri), [Scott Bachman](https://github.com/sdbachman), and [Laure Zanna](https://github.com/LaureZanna)
+[Ryan Abernathey](https://github.com/rabernat), [Ian Grooms](https://github.com/iangrooms), [Julius Busecke](http://jbusecke.github.io/), [Arthur Barthe](https://github.com/arthurBarthe), [Elizabeth Yankovsky](https://github.com/ElizabethYankovsky), [Gustavo Marques](https://github.com/gustavo-marques), [Jacob Steinberg](https://github.com/jakesteinberg), [Andrew Slavin Ross](https://github.com/asross), [Hemant Khatri](https://github.com/hmkhatri), [Scott Bachman](https://github.com/sdbachman), [Laure Zanna](https://github.com/LaureZanna), and [Paige Martin](https://github.com/paigem)
 
 #### Abstract: 
 
@@ -21,7 +23,5 @@ We used [`reveal.js`](https://github.com/hakimel/reveal.js) to create this prese
 To build the html file, run these lines at the terminal within the repository:
 ```bash
 jupyter nbconvert index.ipynb --to slides --reveal-prefix reveal.js --SlidesExporter.reveal_transition=none --SlidesExporter.reveal_scroll=True 
- 
-mv index.slides.html index.html # renames the html file
 
 ```
