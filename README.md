@@ -4,7 +4,7 @@
 
 #### January 25, 2022
 
-#### Contributors: 
+#### Authors: 
 
 [Nora Loose](https://noraloose.github.io/)
 
