@@ -8,7 +8,7 @@
 
 [Nora Loose](https://noraloose.github.io/)
 
-[Ryan Abernathey](https://github.com/rabernat), [Ian Grooms](https://github.com/iangrooms), [Julius Busecke](http://jbusecke.github.io/), [Arthur Barthe](https://github.com/arthurBarthe), [Elizabeth Yankovsky](https://github.com/ElizabethYankovsky), [Gustavo Marques](https://github.com/gustavo-marques), [Jacob Steinberg](https://github.com/jakesteinberg), [Andrew Slavin Ross](https://github.com/asross), [Hemant Khatri](https://github.com/hmkhatri), [Scott Bachman](https://github.com/sdbachman), [Laure Zanna](https://github.com/LaureZanna), and [Paige Martin](https://github.com/paigem)
+[Ryan Abernathey](https://github.com/rabernat), [Ian Grooms](https://github.com/iangrooms), [Julius Busecke](http://jbusecke.github.io/), [Arthur Guillaumin](https://github.com/arthurBarthe), [Elizabeth Yankovsky](https://github.com/ElizabethYankovsky), [Gustavo Marques](https://github.com/gustavo-marques), [Jacob Steinberg](https://github.com/jakesteinberg), [Andrew Slavin Ross](https://github.com/asross), [Hemant Khatri](https://github.com/hmkhatri), [Scott Bachman](https://github.com/sdbachman), [Laure Zanna](https://github.com/LaureZanna), and [Paige Martin](https://github.com/paigem)
 
 #### Abstract: 
 
