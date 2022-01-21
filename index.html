@@ -14448,7 +14448,12 @@ In this talk, we will present examples of how to use GCM-Filters in a range of o
      <hr>
 </div><div>
     <img src="./images/filter_intro.png" width=100%/>
-</div><div align="left" style="font-size:18px;">
+</div>
+</div>
+</div><div class="fragment">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div align="left" style="font-size:18px;">
     Useful for:
     <ul>
       <li>Studying oceanic and atmospheric motions at different spatial scales</li> 
@@ -14456,7 +14461,7 @@ In this talk, we will present examples of how to use GCM-Filters in a range of o
     </ul> 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><!-- background: #fff4e3-->
@@ -14726,7 +14731,6 @@ In this talk, we will present examples of how to use GCM-Filters in a range of o
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">specs</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;filter_scale&#39;</span><span class="p">:</span> <span class="mi">100000</span><span class="p">,</span>
     <span class="s1">&#39;filter_shape&#39;</span><span class="p">:</span> <span class="n">gcm_filters</span><span class="o">.</span><span class="n">FilterShape</span><span class="o">.</span><span class="n">GAUSSIAN</span><span class="p">,</span>
-    <span class="s1">&#39;dx_min&#39;</span><span class="p">:</span> <span class="n">dxe</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">wet_mask</span><span class="p">)</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -14748,7 +14752,8 @@ In this talk, we will present examples of how to use GCM-Filters in a range of o
         <span class="s1">&#39;wet_mask&#39;</span><span class="p">:</span> <span class="n">wet_mask</span><span class="p">,</span> 
         <span class="s1">&#39;dxe&#39;</span><span class="p">:</span> <span class="n">dxe</span><span class="p">,</span> <span class="s1">&#39;dye&#39;</span><span class="p">:</span> <span class="n">dye</span><span class="p">,</span> <span class="s1">&#39;dxn&#39;</span><span class="p">:</span> <span class="n">dxn</span><span class="p">,</span> <span class="s1">&#39;dyn&#39;</span><span class="p">:</span> <span class="n">dyn</span><span class="p">,</span> 
         <span class="s1">&#39;tarea&#39;</span><span class="p">:</span> <span class="n">area</span>
-    <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="n">dx_min</span><span class="o">=</span><span class="n">dxe</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">wet_mask</span><span class="p">)</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
 <span class="p">)</span>
 <span class="nb">filter</span>
 </pre></div>
@@ -14795,7 +14800,7 @@ In this talk, we will present examples of how to use GCM-Filters in a range of o
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">KE</span><span class="o">.</span><span class="n">data</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">KE</span><span class="o">.</span><span class="n">data</span>  <span class="c1"># 1 snapshot of kinetic energy </span>
 </pre></div>
 
      </div>
@@ -14961,7 +14966,7 @@ In this talk, we will present examples of how to use GCM-Filters in a range of o
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
@@ -15134,7 +15139,7 @@ In this talk, we will present examples of how to use GCM-Filters in a range of o
 
 </div>
 
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <div align="center">
@@ -15535,8 +15540,8 @@ In this talk, we will present examples of how to use GCM-Filters in a range of o
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>CPU times: user 18.4 s, sys: 10.8 s, total: 29.2 s
-Wall time: 29.5 s
+<pre>CPU times: user 19.3 s, sys: 10.8 s, total: 30 s
+Wall time: 31.7 s
 </pre>
 </div>
 </div>
@@ -15571,8 +15576,8 @@ Wall time: 29.5 s
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>CPU times: user 983 ms, sys: 858 ms, total: 1.84 s
-Wall time: 2 s
+<pre>CPU times: user 1.81 s, sys: 872 ms, total: 2.68 s
+Wall time: 4.02 s
 </pre>
 </div>
 </div>
@@ -15581,98 +15586,13 @@ Wall time: 2 s
 
 </div>
 
-</div>
+</div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><img src="./images/KE_filtered.png" width=100%/></p>
 
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div align="center">
-    <h2><span style="font:futura; color:black">Filter conserves global integral</span></h2>
-     <hr>
-</div>
-<div align="center">
-    $\int_\text{global ocean} \text{KE}(x,y) \,dA = \int_\text{global ocean} \overline{\text{KE}}(x,y)\, dA$
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">KE</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">z_t</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">*</span> <span class="n">area</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;nlon&#39;</span><span class="p">,</span> <span class="s1">&#39;nlat&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">values</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([8.26510812e+12])</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">KE_filtered</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">z_t</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">*</span> <span class="n">area</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;nlon&#39;</span><span class="p">,</span> <span class="s1">&#39;nlat&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">values</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([8.26510812e+12])</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><div align="center">
